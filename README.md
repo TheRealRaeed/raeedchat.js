@@ -7,7 +7,7 @@ RaeedChat API lets you connect to RaeedChat systems and grow your bot! This is a
 Here is a example of a way to use this package
 
 ```js
-const Client = require("raeedchat-api"); //require the package
+const Client = require("raeedchat.js"); //require the package
 
 const client = new Client();
 
