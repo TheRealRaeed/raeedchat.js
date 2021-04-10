@@ -4,7 +4,7 @@ const gateway = "https://api.raeedchat.com/api/v1";
 
 class Client {
   constructor() {
-    globalThis.ws = new WebSocket("wss://api.raeedchat.com");
+    globalThis.ws = new WebSocket("wss://api.raeedchat.com/websocket/");
     console.log(this.ws);
   }
   static setToken(token, callback) {
@@ -106,8 +106,6 @@ class Client {
       if (e === "MESSAGE_DELETE") {
         callback(d);
       }
-    }
-    if (event === "botEmbed") {
     }
   }
 }

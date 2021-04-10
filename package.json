@@ -1,15 +1,21 @@
 {
-  "name": "BotAPILibrary",
+  "name": "raeedchat.js",
   "version": "0.1.0",
-  "homepage": "https://raeedchat.com/developers/index.html#api-library",
   "description": "A library to help you create a bot on RaeedChat!",
+  "repository": {
+    "url": "https://github.com/TheRealRaeed/raeedchat-api"
+  },
   "main": "index.js",
   "scripts": {
     "startDev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "apis",
+    "bots",
+    "chat"
+  ],
+  "author": "RaeedDoesGaming",
+  "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
     "node-fetch": "^2.6.1",
