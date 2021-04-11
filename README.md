@@ -2,6 +2,10 @@
 
 RaeedChat API lets you connect to RaeedChat systems and grow your bot! This is a library managed by the official RaeedChat team to use our api!
 
+**THIS IS NOT FOR DISCORD BOTS ITS FOR RAEEDCHAT BOTS**
+
+Tokens must be requested by emailing me at webdevraeed@gmail.com
+
 ## Usage
 
 Here is a example of a way to use this package
@@ -11,6 +15,8 @@ const Client = require("raeedchat.js"); //require the package
 
 const client = new Client();
 
+Client.setToken("TOKEN"); //Place your token here to use for verification THIS MUST BE DECLARED BEFORE ANY API ACTIONS SUCH AS SENDING MESSAGES, SENDING EMBEDS etc...
+
 Client.on(
   "message",
   (
@@ -18,7 +24,7 @@ Client.on(
   ) /* The parameter returned to the callback this contains the event message */ => {
     console.log(message.name); //the message.name property lets you get the name of the user
     if (message.message === "!help") {
-      message.send("Hey!"); // Will send the message "hey", this is a additional property added by this package
+      message.send("Hey!"); // Will send the message "hey", this is a additional property added by this package MAKE SURE THE TOKEN IS SET BEFORE THIS!
     }
     if (message.message === "!embed") {
       message.embed(
@@ -33,8 +39,6 @@ Client.on(
     }
   }
 );
-
-Client.setToken("TOKEN"); //Place your token here to use for verification
 ```
 
 ### Functions
@@ -46,12 +50,16 @@ Client.setToken("TOKEN"); //Place your token here to use for verification
 
 messageCreate - When a message is created this event is fired properties listed below
 
-- message.send(content) = Sends a message
-- message.embed(title, description, image) = Sends a embed
-- message.message = The actual message
-- message.name = The sender of the message
-- message.messageid = The id of the message
-- message.id = The id of the sender
+- `message.send(content)` = Sends a message
+- `message.embed(title`, description, image) = Sends a embed
+- `message.message` = The actual message
+- `message.name` = The sender of the message
+- `message.messageid` = The id of the message
+- `message.id` = The id of the sender
 
 messageDelete - When a message is deleted
 message = id of the message
+
+## Contribute
+
+This project is looking to get better! If you have a suggestion or something you want to add, please go to our github!
