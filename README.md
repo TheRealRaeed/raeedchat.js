@@ -1,5 +1,9 @@
 # RaeedChat API
 
+-----------
+NOTICE: RaeedChat v1 API is no longer available, this library will be updated soon after a new version of the API is available
+---------
+
 RaeedChat API lets you connect to RaeedChat systems and grow your bot! This is a library managed by the official RaeedChat team to use our api!
 
 **THIS IS NOT FOR DISCORD BOTS ITS FOR RAEEDCHAT BOTS**
